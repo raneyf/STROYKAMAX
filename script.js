@@ -1,15 +1,12 @@
-// Плавная прокрутка к форме
 function scrollToForm() {
     document.getElementById('contact').scrollIntoView({
         behavior: 'smooth'
     });
 }
 
-// Обработка формы
 document.getElementById('applicationForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Сбор данных формы
     const formData = {
         name: document.getElementById('name').value,
         phone: document.getElementById('phone').value,
@@ -19,24 +16,19 @@ document.getElementById('applicationForm').addEventListener('submit', function(e
         timestamp: new Date().toLocaleString()
     };
     
-    // В реальном проекте здесь будет отправка на сервер
     console.log('Заявка отправлена:', formData);
     
-    // Показываем уведомление
     alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.');
     
-    // Очищаем форму
     this.reset();
 });
 
-// Динамическое обновление года в футере
 document.addEventListener('DOMContentLoaded', function() {
     const year = new Date().getFullYear();
     const footer = document.querySelector('.footer p');
     footer.textContent = © ${year} Строительная компания "ПроектСтрой". Все права защищены.;
 });
 
-// Плавное появление элементов при скролле
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -51,10 +43,10 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Наблюдаем за карточками услуг
 document.querySelectorAll('.service-card').forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(20px)';
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(card);
 });
+
