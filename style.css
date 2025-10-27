@@ -16,7 +16,6 @@ body {
     padding: 0 20px;
 }
 
-/* Шапка */
 .header {
     background: #2c3e50;
     color: white;
@@ -54,7 +53,6 @@ body {
     color: #3498db;
 }
 
-/* Герой секция */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
                 url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3') center/cover;
@@ -90,7 +88,6 @@ body {
     background: #c0392b;
 }
 
-/* Услуги */
 .services {
     padding: 80px 0;
     background: #f8f9fa;
@@ -133,7 +130,6 @@ body {
     color: #2c3e50;
 }
 
-/* Контакты */
 .contact {
     padding: 80px 0;
     background: white;
@@ -182,7 +178,6 @@ body {
     background: #2980b9;
 }
 
-/* Форма */
 .application-form {
     max-width: 600px;
     margin: 0 auto;
@@ -236,7 +231,6 @@ body {
     background: #219a52;
 }
 
-/* Футер */
 .footer {
     background: #2c3e50;
     color: white;
@@ -244,7 +238,6 @@ body {
     padding: 2rem 0;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -267,3 +260,4 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
