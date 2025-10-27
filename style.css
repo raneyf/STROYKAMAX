@@ -53,14 +53,6 @@ body {
     color: #3498db;
 }
 
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3') center/cover;
-    color: white;
-    padding: 150px 0 100px;
-    text-align: center;
-    margin-top: 80px;
-}
 
 .hero h2 {
     font-size: 3rem;
@@ -260,4 +252,5 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
