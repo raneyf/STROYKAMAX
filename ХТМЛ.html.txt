@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Строительная компания "ПроектСтрой"</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>ПроектСтрой</h1>
+                    <p>Надёжное строительство с 2010 года</p>
+                </div>
+                <nav class="nav">
+                    <a href="#services">Услуги</a>
+                    <a href="#about">О нас</a>
+                    <a href="#contact">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Герой секция -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Строим будущее вместе с вами</h2>
+                <p>Профессиональное строительство домов, ремонт и отделка под ключ</p>
+                <button class="cta-button" onclick="scrollToForm()">Оставить заявку</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Строительство домов</h3>
+                    <p>Полный цикл от проекта до сдачи под ключ</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Ремонтные работы</h3>
+                    <p>Капитальный и косметический ремонт любой сложности</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Отделка помещений</h3>
+                    <p>Элитная отделка с использованием современных материалов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма заявки -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Оставьте заявку</h2>
+            <p class="contact-subtitle">Свяжитесь с нами удобным способом</p>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <h3>📞 Позвоните нам</h3>
+                    <a href="tel:+79991234567" class="contact-link">+7 (999) 123-45-67</a>
+                </div>
+                <div class="contact-method">
+                    <h3>✉️ Напишите в Telegram</h3>
+                    <a href="https://t.me/proektstroy" target="_blank" class="contact-link">@proektstroy</a>
+                </div>
+            </div>
+
+            <form id="applicationForm" class="application-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Услуга</label>
+                    <select id="service" name="service">
+
+<option value="">Выберите услугу</option>
+                        <option value="construction">Строительство дома</option>
+                        <option value="repair">Ремонт</option>
+                        <option value="finishing">Отделка</option>
+                        <option value="consultation">Консультация</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Опишите ваши пожелания..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Строительная компания "ПроектСтрой". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
