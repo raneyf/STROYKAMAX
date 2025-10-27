@@ -26,7 +26,7 @@ document.getElementById('applicationForm').addEventListener('submit', function(e
 document.addEventListener('DOMContentLoaded', function() {
     const year = new Date().getFullYear();
     const footer = document.querySelector('.footer p');
-    footer.textContent = © ${year} Строительная компания "ПроектСтрой". Все права защищены.;
+    footer.textContent = © ${year} Строительная компания "Стройка Макс". Все права защищены.;
 });
 
 const observerOptions = {
@@ -49,4 +49,5 @@ document.querySelectorAll('.service-card').forEach(card => {
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(card);
 });
+
 
